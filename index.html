@@ -1,0 +1,36 @@
+<!-- 
+make opening page
+    click start to begin quiz
+make questions and answers:
+    each answer is a button
+    upon event click question changes
+    if correct button clicked, score++
+Make timer using Interval function of API 
+quiz ends when all questions answered or timer == 0
+save score to local drive - use initials as save var
+show ?high? score on screen ~ if current score > prev saved score then save 
+LOOP -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <button id="start-quiz">Start Quiz</button>
+    <h3 id="counter"></h3>
+    
+    <section id="question-container" style="display: none">
+        <h2 id="questions"></h2>
+        <ul id="answers">
+
+        </ul>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
