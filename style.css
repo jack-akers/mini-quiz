@@ -1,12 +1,44 @@
+*{
+    background-color:paleturquoise;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
-
-
-#counter {
-    text-align: left;
-    font-size: 30px;
 }
 
+#start-quiz{
+    background-color: lightcoral;
+    font-size: 50px;
+    height: 200px; 
+    width: 400px; 
+    border-radius: 25px;
+    box-shadow: 10px 10px 20px grey;
+}
+
+#counter{
+    color: indigo;
+    font-size: 50px;
+
+}
+
+#question-container{
+    color:maroon;
+    text-shadow: 5px 5px 10px orange;
+}
 #questions{
-
+    font-size: 40px;
+    color: ;
 }
 
+.btn {
+    background-color:navy;
+    color: mediumpurple;
+    height: 200px; 
+    width: 400px; 
+    border-radius: 25px;
+    box-shadow: 10px 10px 20px grey;
+    margin: 30px;
+    justify-content: center;
+}
+
+.hide {
+    display:none;
+}
