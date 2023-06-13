@@ -157,8 +157,8 @@ function checkAnswer(e){
 
     if(e.target.getAttribute('data-isItCorrect') == "false"){
         timeLeft -= 10;
-     }
-    // if isItCorrect == "true" give points
+     };
+
     if(timeLeft <= 0){
         endGame();
     }else if(count == fullQuiz.length - 1){
@@ -167,9 +167,16 @@ function checkAnswer(e){
     showNextQuestion();
     }
 }
-
+function pauseInterval(){
+    clearInterval(timeInterval);
+   };
+   
 function endGame(){
-    
+    var get = document.getElementById("btn2");
+    get.addEventListener("click", pauseInterval);
+    var scorePage = "./scores.html";
+    location.replace(scorePage);
+
 }
 
 function startGame() {
