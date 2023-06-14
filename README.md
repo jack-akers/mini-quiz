@@ -19,4 +19,9 @@ WHEN the game is over
 THEN I can save my initials and score
 
 https://github.com/jack-akers/mini-quiz
+
 https://jack-akers.github.io/mini-quiz/
+
+![image](https://github.com/jack-akers/mini-quiz/assets/128747338/75faa9f4-f039-4112-8f71-90f20ecf8fb9)
+
+![image](https://github.com/jack-akers/mini-quiz/assets/128747338/c2cfdabb-4bd0-427f-98ca-13657b966fea)
