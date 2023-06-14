@@ -4,7 +4,9 @@ var questionEl = document.getElementById("questions");
 var startBtn = document.getElementById("start-quiz");
 var questionContainerEl =  document.querySelector('#question-container');
 console.log(document.getElementById("start-quiz"))
+// var fin = document.getElementsByClassName("finish");
 
+// fin.style.display="none";
 
 var fullQuiz = [
     {
@@ -143,14 +145,6 @@ function countDown() {
     }, 1000);
 }
 
-var pointTotal = 0
-pointCounterEl.textContent=pointTotal;
-pointCounterEl.style.fontSize="50px"
-pointCounterEl.style.color="darkgreen"
-
-if(pointTotal==0){
-    pointCounterEl.style.display="none";
-}
 
 function checkAnswer(e){
     console.log(e.target.getAttribute('data-isItCorrect'))
@@ -167,17 +161,25 @@ function checkAnswer(e){
     showNextQuestion();
     }
 }
-function pauseInterval(){
-    clearInterval(timeInterval);
-   };
-   
-function endGame(){
-    var get = document.getElementById("btn2");
-    get.addEventListener("click", pauseInterval);
-    var scorePage = "./scores.html";
-    location.replace(scorePage);
 
-}
+   
+// function endGame(){
+//     var get = document.getElementById("btn2");
+//     function pauseInterval(){
+//         //     clearInterval(timeInterval);
+//             var score = timeLeft.val;
+//             questionContainerEl.style.display = "none";
+//             fin.style.display = "block";
+
+//         };
+
+//     get.addEventListener("click", pauseInterval);
+//     btn2.style.display = "block";
+//     btn2.style.minHeight="100px";
+//     btn2.style.minWidth="800px";
+//     btn2.style.fontSize="30px";
+//     localStorage.setItem(score);
+// }
 
 function startGame() {
     countDown();
